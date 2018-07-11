@@ -1,8 +1,22 @@
 {
   "version": 1,
-  "clusterName": "https://192.168.42.208:8443",
-  "namespace": "showcase",
+  "clusterName": "https://master.mobiletest.openshiftworkshop.com",
+  "namespace": "mobile-ci",
   "clientId": "myapp-android",
   "services": [
+    {
+      "id": "keycloak-myapp-android-public",
+      "name": "keycloak",
+      "type": "keycloak",
+      "url": "https://keycloak-mobile-ci.apps.mobiletest.openshiftworkshop.com/auth",
+      "config": {
+        "auth-server-url": "https://keycloak-mobile-ci.apps.mobiletest.openshiftworkshop.com/auth",
+        "confidential-port": 0,
+        "public-client": true,
+        "realm": "mobile-ci",
+        "resource": "myapp-android-public",
+        "ssl-required": "external"
+      }
+    }
   ]
 }
