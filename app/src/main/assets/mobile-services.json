@@ -17,6 +17,13 @@
         "resource": "myapp-android-public",
         "ssl-required": "external"
       }
+    },
+    {
+      "id": "metrics-myapp-android",
+      "name": "metrics",
+      "type": "metrics",
+      "url": "https://aerogear-app-metrics-mobile-ci.apps.mobiletest.openshiftworkshop.com/metrics",
+      "config": {}
     }
   ]
 }
