@@ -1,29 +1,42 @@
 {
   "version": 1,
-  "clusterName": "https://master.mobiletest.openshiftworkshop.com",
-  "namespace": "mobile-ci",
-  "clientId": "myapp-android",
+  "clusterName": "https://master.mitre.openshiftworkshop.com",
+  "namespace": "mobile-security-demo",
+  "clientId": "android-showcase-app-android",
   "services": [
     {
-      "id": "keycloak-myapp-android-public",
+      "id": "keycloak-android-showcase-app-android-public",
       "name": "keycloak",
       "type": "keycloak",
-      "url": "https://keycloak-mobile-ci.apps.mobiletest.openshiftworkshop.com/auth",
+      "url": "https://keycloak-mobile-security-demo.apps.mitre.openshiftworkshop.com/auth",
       "config": {
-        "auth-server-url": "https://keycloak-mobile-ci.apps.mobiletest.openshiftworkshop.com/auth",
+        "auth-server-url": "https://keycloak-mobile-security-demo.apps.mitre.openshiftworkshop.com/auth",
         "confidential-port": 0,
         "public-client": true,
-        "realm": "mobile-ci",
-        "resource": "myapp-android-public",
+        "realm": "mobile-security-demo",
+        "resource": "android-showcase-app-android-public",
         "ssl-required": "external"
       }
     },
     {
-      "id": "metrics-myapp-android",
+      "id": "metrics-android-showcase-app-android",
       "name": "metrics",
       "type": "metrics",
-      "url": "https://aerogear-app-metrics-mobile-ci.apps.mobiletest.openshiftworkshop.com/metrics",
+      "url": "https://aerogear-app-metrics-mobile-security-demo.apps.mitre.openshiftworkshop.com/metrics",
       "config": {}
+    },
+    {
+      "id": "ups-secret-android-showcase-app-android-syj5s",
+      "name": "ups",
+      "type": "push",
+      "url": "https://ups-mobile-security-demo.apps.mitre.openshiftworkshop.com/",
+      "config": {
+        "android": {
+          "senderId": "AIzaSyD-q2MWWt2JDFvHLIX_uTmPblvO-ybXX-E",
+          "variantId": "e11e9b4f-6e3e-4bba-a777-c4ba1ac161e3",
+          "variantSecret": "f69d4649-17de-477b-a4b7-2c2704f88d0e"
+        }
+      }
     }
   ]
 }
