@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "clusterName": "https://master.mitre.openshiftworkshop.com",
+  "clusterName": "https://master.mitredhs.openshiftworkshop.com",
   "namespace": "mobile-security-demo",
   "clientId": "android-showcase-app-android",
   "services": [
@@ -8,9 +8,9 @@
       "id": "keycloak-android-showcase-app-android-public",
       "name": "keycloak",
       "type": "keycloak",
-      "url": "https://keycloak-mobile-security-demo.apps.mitre.openshiftworkshop.com/auth",
+      "url": "https://keycloak-mobile-security-demo.apps.mitredhs.openshiftworkshop.com/auth",
       "config": {
-        "auth-server-url": "https://keycloak-mobile-security-demo.apps.mitre.openshiftworkshop.com/auth",
+        "auth-server-url": "https://keycloak-mobile-security-demo.apps.mitredhs.openshiftworkshop.com/auth",
         "confidential-port": 0,
         "public-client": true,
         "realm": "mobile-security-demo",
@@ -22,19 +22,19 @@
       "id": "metrics-android-showcase-app-android",
       "name": "metrics",
       "type": "metrics",
-      "url": "https://aerogear-app-metrics-mobile-security-demo.apps.mitre.openshiftworkshop.com/metrics",
+      "url": "https://aerogear-app-metrics-mobile-security-demo.apps.mitredhs.openshiftworkshop.com/metrics",
       "config": {}
     },
     {
-      "id": "ups-secret-android-showcase-app-android-syj5s",
+      "id": "ups-secret-android-showcase-app-android-2fr0o",
       "name": "ups",
       "type": "push",
-      "url": "https://ups-mobile-security-demo.apps.mitre.openshiftworkshop.com/",
+      "url": "https://ups-mobile-security-demo.apps.mitredhs.openshiftworkshop.com/",
       "config": {
         "android": {
-          "senderId": "AIzaSyD-q2MWWt2JDFvHLIX_uTmPblvO-ybXX-E",
-          "variantId": "e11e9b4f-6e3e-4bba-a777-c4ba1ac161e3",
-          "variantSecret": "f69d4649-17de-477b-a4b7-2c2704f88d0e"
+          "senderId": "583340528574",
+          "variantId": "cade9e2e-6630-456d-9c1e-5058d1fd061c",
+          "variantSecret": "92dbaa67-670d-4658-bf27-379a89b3e71f"
         }
       }
     }
